@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Piedra,Papel,Tijera,Lagarto,Spock</string>
+    <string name="action_settings">Settings</string>
+    <string name="BtnJug">Un jugador</string>
+    <string name="BtnJvJ">Dos jugador</string>
+    <string name="BtnInstrucciones">Instrucciones</string>
+
+</resources>
