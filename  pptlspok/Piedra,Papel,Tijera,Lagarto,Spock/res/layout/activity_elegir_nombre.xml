@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ElegirNombre" >
+
+    <TextView
+        android:id="@+id/nombreJ1"
+        android:textColor="#92F00F"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jugador1" />
+    <EditText
+        android:inputType="text"
+        android:id="@+id/cajaJ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreJ1" 
+        />
+    <TextView
+        android:id="@+id/nombreJ2"
+        android:textColor="#92F00F"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cajaJ1"
+        android:visibility="invisible"
+        android:text="@string/jugador2" />
+    <EditText
+        android:id="@+id/cajaJ2"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombreJ2" 
+        />
+
+    <Button
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cajaJ2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="46dp"
+        android:text="@string/atras" />
+
+    <Button
+        android:id="@+id/siguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/atras"
+        android:layout_alignBottom="@+id/atras"
+        android:layout_alignRight="@+id/cajaJ2"
+        android:text="@string/siguiente" />
+
+</RelativeLayout>
