@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/MnuOpc1" android:title="@string/instrucciones"
+          android:icon="@android:drawable/btn_star">
+    </item>
+    
+</menu>
