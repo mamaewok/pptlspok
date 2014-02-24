@@ -2,5 +2,8 @@
     <item android:id="@+id/MnuOpc1" android:title="@string/instrucciones"
           android:icon="@android:drawable/btn_star">
     </item>
+    <item android:id="@+id/MnuOpc2" android:title="@string/des"
+          android:icon="@android:drawable/btn_dialog">
+    </item>
     
 </menu>
