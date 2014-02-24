@@ -73,24 +73,6 @@
         android:scaleType="centerCrop"
         android:src="@drawable/spock" />
 
-    <ImageButton
-        android:id="@+id/piedra"
-        style="@style/CustomTheme"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="30dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:contentDescription="@string/botones"
-        android:cropToPadding="false"
-        android:maxHeight="80dp"
-        android:maxWidth="80dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/piedra" />
-
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
@@ -101,14 +83,6 @@
         android:text="@string/jugador"
         android:textColor="#92F00F"
         android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/buttonAtras"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_above="@+id/buttonReiniciar"
-        android:layout_alignRight="@+id/jugador2"
-        android:text="@string/atras" />
 
     <ImageButton
         android:id="@+id/jugador1"
@@ -124,31 +98,55 @@
         android:cropToPadding="false"
         android:maxHeight="80dp"
         android:maxWidth="80dp"
-        android:src="@drawable/jug1"
         android:visibility="invisible" />
 
     <Button
-        android:id="@+id/buttonReiniciar"
+        android:id="@+id/buttonAtras"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_alignBottom="@+id/spock"
-        android:layout_alignLeft="@+id/buttonAtras"
-        android:text="@string/reiniciar" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spock"
+        android:text="@string/atras" />
 
     <ImageButton
         android:id="@+id/jugador2"
         style="@style/CustomTheme"
         android:layout_width="120dp"
         android:layout_height="120dp"
+        android:layout_alignBottom="@+id/lagarto"
         android:layout_alignLeft="@+id/jugador1"
-        android:layout_alignTop="@+id/tijeras"
         android:adjustViewBounds="true"
         android:background="@android:color/transparent"
         android:contentDescription="@string/botones"
         android:cropToPadding="false"
         android:maxHeight="80dp"
         android:maxWidth="80dp"
-        android:src="@drawable/jug2"
         android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonReiniciar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/jugador2"
+        android:visibility="invisible"
+        android:text="@string/reiniciar" />
+
+    <ImageButton
+        android:id="@+id/piedra"
+        style="@style/CustomTheme"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_toLeftOf="@+id/jugador1"
+        android:adjustViewBounds="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/botones"
+        android:cropToPadding="false"
+        android:maxHeight="80dp"
+        android:maxWidth="80dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/piedra" />
 
 </RelativeLayout>
