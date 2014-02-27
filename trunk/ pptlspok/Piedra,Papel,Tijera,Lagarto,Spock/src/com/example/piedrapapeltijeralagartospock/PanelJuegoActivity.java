@@ -79,7 +79,10 @@ public class PanelJuegoActivity extends Activity implements
 			startActivity(new Intent(PanelJuegoActivity.this,
 					Desarrollador.class));
 			break;
-
+			
+		case R.id.MnuOpc3:
+			startActivity(new Intent(PanelJuegoActivity.this, Score.class));
+			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}

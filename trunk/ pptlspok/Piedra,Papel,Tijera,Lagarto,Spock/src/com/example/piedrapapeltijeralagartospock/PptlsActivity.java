@@ -50,6 +50,10 @@ public class PptlsActivity extends Activity implements View.OnClickListener {
 		case R.id.MnuOpc2:
 			startActivity(new Intent(PptlsActivity.this, Desarrollador.class));
 			break;
+			
+		case R.id.MnuOpc3:
+			startActivity(new Intent(PptlsActivity.this, Score.class));
+			break;
 		}
 		return super.onOptionsItemSelected(item);
 	}
